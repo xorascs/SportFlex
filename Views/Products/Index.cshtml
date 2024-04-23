@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SportFlex.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card">
+                <img src="@GetImageUrl(item)" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">
+                        <strong>Category:</strong> @item.Category.Name<br />
+                        <strong>Color:</strong> @item.Color.Name<br />
+                        <strong>Brand:</strong> @item.Brand.Name
+                    </p>
+                    <div class="btn-group" role="group" aria-label="Product Actions">
+                        <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-info">Details</a>
+                        @if (ViewBag.Role == "Admin")
+                        {
+                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-primary">Edit</a>
+                            <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger">Delete</a> 
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@functions {
+    string GetImageUrl(SportFlex.Models.Product product)
+    {
+        if (product.ImagePaths != null && product.ImagePaths.Any())
+        {
+            return Url.Content("~/uploads/" + product.ImagePaths.First());
+        }
+        else
+        {
+            return Url.Content("~/images/default-car.jpg");
+        }
+    }
+}

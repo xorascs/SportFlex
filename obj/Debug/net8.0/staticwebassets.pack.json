@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SportFlex.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

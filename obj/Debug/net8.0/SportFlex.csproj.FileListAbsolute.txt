@@ -261,3 +261,4 @@ C:\Oskars_Projects\SportFlex\bin\Debug\net8.0\Microsoft.Extensions.DependencyInj
 C:\Oskars_Projects\SportFlex\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Oskars_Projects\SportFlex\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Oskars_Projects\SportFlex\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Oskars_Projects\SportFlex\obj\Debug\net8.0\SportFlex.sourcelink.json

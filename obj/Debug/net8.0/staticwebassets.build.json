@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+84ibFxHK5KLOrpWL5ibXypFd278R9AHh9vt74wRpDM=",
+  "Hash": "9ks9jtNCUmeoavspOKemFPr896kP2yQvMISlW1OpnBs=",
   "Source": "SportFlex",
   "BasePath": "_content/SportFlex",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg",
+      "SourceId": "SportFlex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\",
+      "BasePath": "_content/SportFlex",
+      "RelativePath": "uploads/2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg"
     },
     {
       "Identity": "C:\\Users\\owner\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
