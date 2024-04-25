@@ -9,8 +9,24 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\ico.ico",
+      "PackagePath": "staticwebassets\\ico.ico"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\images\\basketball.jpg",
+      "PackagePath": "staticwebassets\\images\\basketball.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\images\\login_register_img.jpeg",
+      "PackagePath": "staticwebassets\\images\\login_register_img.jpeg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\images\\running.jpg",
+      "PackagePath": "staticwebassets\\images\\running.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\images\\soccer.jpg",
+      "PackagePath": "staticwebassets\\images\\soccer.jpg"
     },
     {
       "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\js\\site.js",
@@ -245,8 +261,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg",
-      "PackagePath": "staticwebassets\\uploads\\2e0b3188-b198-42d6-b3df-bbf6a2c41e9b_20230426012532_2.jpg"
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\1fb416b9-53a4-4c4d-9f16-b1ef0e3979c1_2024-mercedes-benz-e-class-exterior-105-6446a2cb7003d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1fb416b9-53a4-4c4d-9f16-b1ef0e3979c1_2024-mercedes-benz-e-class-exterior-105-6446a2cb7003d.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\6559e4d8-dce7-4672-9f42-27a371bb85ef_2024-mercedes-benz-e-class.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6559e4d8-dce7-4672-9f42-27a371bb85ef_2024-mercedes-benz-e-class.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\833fb272-b297-4f36-9cdd-dd20460db272_20230426012532_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\833fb272-b297-4f36-9cdd-dd20460db272_20230426012532_2.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\8de30697-e33a-4b7d-817c-6fcae32ca258_20230426012532_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8de30697-e33a-4b7d-817c-6fcae32ca258_20230426012532_2.jpg"
+    },
+    {
+      "Id": "C:\\Oskars_Projects\\SportFlex\\wwwroot\\uploads\\94849e33-9fba-4d98-83df-07a581530ab9_2024-mercedes-benz-e-class-exterior-105-6446a2cb7003d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\94849e33-9fba-4d98-83df-07a581530ab9_2024-mercedes-benz-e-class-exterior-105-6446a2cb7003d.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SportFlex.Microsoft.AspNetCore.StaticWebAssets.props",

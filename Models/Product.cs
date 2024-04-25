@@ -15,6 +15,8 @@ namespace SportFlex.Models
         [Required]
         [StringLength(50)]
         public required string Name { get; set; }
+        [Required]
+        public required string Description { get; set; }
         [Required(ErrorMessage = "The Images are required")]
         [Display(Name = "Images")]
         public List<string> ImagePaths { get; set; } = new List<string>();

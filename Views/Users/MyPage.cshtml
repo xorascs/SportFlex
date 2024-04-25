@@ -1,27 +1,60 @@
-﻿@model SportFlex.Models.User
+﻿@model SportFlex.Models.UserViewModel
 
 @{
     ViewData["Title"] = "My Account";
 }
 
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">
-                        @Model.Login
-                        @if (@Model.Role == Role.Admin)
-                        {
-                            <span class="badge bg-success">Admin</span>
-                        }
-                    </h2>
-                    <p class="card-text">
-                        <strong>Email:</strong> @Model.Email
-                    </p>
-                    <div class="mt-3">
-                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card animate__animated animate__zoomIn">
+                        <div class="card-body animate__animated animate__delay-1s animate__fadeIn">
+                            <h2 class="card-title">
+                                @Model.User!.Login
+                                @if (@Model.User!.Role == Role.Admin)
+                                {
+                                    <span class="badge bg-success">A</span>
+                                }
+                            </h2>
+                            <p class="card-text">
+                                <strong>Email:</strong> @Model.User!.Email
+                            </p>
+                            <div class="d-grid gap-2">
+                                <a asp-action="Edit" asp-route-id="@Model.User!.Id" class="btn btn-primary">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@Model.User!.Id" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 animate__animated animate__zoomIn">
+                        <div class="card-body animate__animated animate__delay-1s animate__fadeIn">
+                            <h5 class="card-title">User Reviews</h5>
+                            <hr />
+                            @if (Model.Reviews.Any())
+                            {
+                                <ul class="list-group">
+                                    @foreach (var review in Model.Reviews)
+                                    {
+                                        <li class="list-group-item">
+                                            <strong>@review.Product!.Brand!.Name @review.Product!.Name</strong>
+                                            <p>@review.Comment</p>
+                                            <small>@review.CreatedAt</small>
+                                            <div class="float-end">
+                                                <a asp-controller="Reviews" asp-action="Edit" asp-route-id="@review.Id" class="btn btn-secondary">Edit</a>
+                                                <a asp-controller="Reviews" asp-action="Delete" asp-route-id="@review.Id" class="btn btn-danger">Delete</a>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <p>No reviews available.</p>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

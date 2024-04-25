@@ -1,8 +1,89 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Sport Catalog";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row">
+        <h1 class="display-4 text-center mb-4 animate__animated animate__bounceInDown">Welcome to SportFlex</h1>
+        <hr class="animate__animated animate__fadeIn" />
+        <div class="col-md-8 offset-md-2 animate__animated animate__delay-1s animate__fadeIn">
+            <p>
+                Our Sport Catalog is your go-to resource for exploring a wide range of premium sports equipment and apparel. Whether you're deeply passionate about sports or just starting out, we're here to provide you with comprehensive information to support your interests and activities.
+            </p>
+            <p>
+                <strong>What Sets Us Apart?</strong>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Our Catalog</th>
+                            <th>Comparison</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product Quality</td>
+                            <td>Curated selection of high-quality products from top brands</td>
+                            <td>Varied quality across different sources</td>
+                        </tr>
+                        <tr>
+                            <td>Product Variety</td>
+                            <td>Diverse range of sports equipment and apparel for all interests and skill levels</td>
+                            <td>Limited options, especially for niche sports</td>
+                        </tr>
+                        <tr>
+                            <td>Information Accessibility</td>
+                            <td>Easy access to detailed product information and specifications</td>
+                            <td>Information may be scattered or incomplete</td>
+                        </tr>
+                        <tr>
+                            <td>Resourcefulness</td>
+                            <td>Comprehensive catalog to explore various sports and related products</td>
+                            <td>May require multiple sources to gather similar information</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                Our Sport Catalog is designed to offer valuable insights and guidance, empowering you to make informed decisions about your sports equipment and apparel needs. We're committed to providing a seamless browsing experience and ensuring that you have access to the most relevant and up-to-date information.
+            </p>
+            <h3 class="text-center mt-4">Explore the World of Sports with Our Catalog</h3>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/images/basketball.jpg" class="card-img-top" alt="Basketball">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Quality</h5>
+                            <p class="card-text">Discover top-notch sports equipment designed to enhance your performance and enjoyment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/images/soccer.jpg" class="card-img-top" alt="Soccer">
+                        <div class="card-body">
+                            <h5 class="card-title">Extensive Variety</h5>
+                            <p class="card-text">Explore our diverse inventory catering to a wide range of sports and activities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/images/running.jpg" class="card-img-top" alt="Running">
+                        <div class="card-body">
+                            <h5 class="card-title">Comprehensive Information</h5>
+                            <p class="card-text">Access detailed product information and specifications to make informed choices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a asp-action="Index" asp-controller="Products">
+                    Ready to dive into the world of sports? Explore our Sport Catalog today and discover everything you need to pursue your athletic passions!
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

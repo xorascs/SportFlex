@@ -64,10 +64,45 @@ namespace SportFlex.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, string brandFilter, string categoryFilter, string colorFilter)
         {
-            var dataContext = _context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Color);
-            return View(await dataContext.ToListAsync());
+            // Retrieve all products with their related entities
+            IQueryable<Product> products = _context.Products
+                .Include(p => p.Brand)
+                .Include(p => p.Category)
+                .Include(p => p.Color);
+
+            // Apply search string filter if provided
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(p => p.Name.Contains(searchString));
+            }
+
+            // Apply brand filter if provided
+            if (!string.IsNullOrEmpty(brandFilter))
+            {
+                products = products.Where(p => p.Brand!.Name.Contains(brandFilter));
+            }
+
+            // Apply category filter if provided
+            if (!string.IsNullOrEmpty(categoryFilter))
+            {
+                products = products.Where(p => p.Category!.Name.Contains(categoryFilter));
+            }
+
+            // Apply color filter if provided
+            if (!string.IsNullOrEmpty(colorFilter))
+            {
+                products = products.Where(p => p.Color!.Name.Contains(colorFilter));
+            }
+
+            // Populate ViewBag with brands, categories, and colors for dropdowns
+            ViewBag.Brands = await _context.Brands.ToListAsync();
+            ViewBag.Categories = await _context.Categories.ToListAsync();
+            ViewBag.Colors = await _context.Colors.ToListAsync();
+
+            // Return the filtered list of products to the view
+            return View(await products.ToListAsync());
         }
 
         // GET: Products/Details/5
@@ -118,7 +153,7 @@ namespace SportFlex.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,BrandId,ColorId,CategoryId,Name,ImagePaths")] Product product, List<IFormFile> ImagePaths)
+        public async Task<IActionResult> Create([Bind("Id,BrandId,ColorId,CategoryId,Name,Description,ImagePaths")] Product product, List<IFormFile> ImagePaths)
         {
             if (ModelState.IsValid)
             {
@@ -189,7 +224,7 @@ namespace SportFlex.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,BrandId,ColorId,CategoryId,Name,ImagePaths")] Product product, List<IFormFile> ImagePaths)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,BrandId,ColorId,CategoryId,Name,Description,ImagePaths")] Product product, List<IFormFile> ImagePaths)
         {
             if (id != product.Id)
             {
@@ -249,6 +284,7 @@ namespace SportFlex.Controllers
                     originalProduct.ColorId = product.ColorId;
                     originalProduct.CategoryId = product.CategoryId;
                     originalProduct.Name = product.Name;
+                    originalProduct.Description = product.Description;
 
                     _context.Update(originalProduct);
                     await _context.SaveChangesAsync();
@@ -334,7 +370,7 @@ namespace SportFlex.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> SubmitComment(int id, string commentText, int rating)
+        public async Task<IActionResult> SubmitComment(int id, string commentText)
         {
             if (!IsLoggedIn())
             {

@@ -4,33 +4,69 @@
     ViewData["Title"] = "Login";
 }
 
+<style>
+    .card {
+        border: none;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+    .card-img {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .card-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-title {
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 20px;
+    }
+
+    .col-md-6 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+</style>
+
 <div class="container">
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center mt-5 animate__animated animate__backInRight">
+        <div class="col-md-3 animate__animated animate__fadeInRight animate__delay-1s">
+            <div class="card">
+                <div class="card-img">
+                    <img src="~/images/login_register_img.jpeg" class="img-fluid" alt="Cover Image">
+                </div>
+            </div>
+        </div>
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title text-center display-4">Login</h1>
+                    <h1 class="card-title text-center display-4 mb-4">Login</h1>
                     <hr />
-                    <form asp-action="Login">
+                    <form asp-action="Login" class="animate__animated animate__fadeIn animate__delay-1s">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group">
-                            <label asp-for="Login" class="control-label">Username</label>
-                            <input asp-for="Login" class="form-control" placeholder="Enter your username" />
+                            <label asp-for="Login" class="control-label mb-2">Login</label>
+                            <input asp-for="Login" class="form-control" placeholder="Enter your Login" />
                             <span asp-validation-for="Login" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Password" class="control-label">Password</label>
+                            <label asp-for="Password" class="control-label my-2">Password</label>
                             <input asp-for="Password" class="form-control" placeholder="Enter your password" />
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary d-flex mx-auto my-2">Login</button>
+                            <button type="submit" class="btn btn-dark btn-block mt-3">Login</button>
+                            <a asp-action="Register" class="btn btn-dark btn-block mt-3">Register</a>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="text-center mt-3 animate__animated animate__fadeIn animation-delay-1s">
-                <a asp-action="Register">Don't have an account? Register here</a>
             </div>
         </div>
     </div>

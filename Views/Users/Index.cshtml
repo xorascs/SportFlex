@@ -1,50 +1,49 @@
 ﻿@model IEnumerable<SportFlex.Models.User>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Users";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Login)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Login)
-                    @if (item.Role == Role.Admin)
-                    {
-                        <span class="badge bg-success">Admin</span>
-                    }
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+    <div class="animate__animated animate__fadeIn">
+        <h1 class="text-center mb-4">Users</h1>
+        <p class="text-center">
+            <a asp-action="Create" class="btn btn-dark">Create User</a>
+        </p>
+    </div>
+    
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-striped">
+            <thead class="animate__animated animate__delay-1s animate__fadeIn">
+                <tr>
+                    <th>Login</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="animate__animated animate__delay-1s animate__fadeIn">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Login)
+                            @if (item.Role == Role.Admin)
+                            {
+                                <span class="badge bg-success">A</span>
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Password)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-sm btn-danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

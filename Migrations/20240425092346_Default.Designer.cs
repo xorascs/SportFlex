@@ -12,7 +12,7 @@ using SportFlex.Data;
 namespace SportFlex.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240423105349_Default")]
+    [Migration("20240425092346_Default")]
     partial class Default
     {
         /// <inheritdoc />
@@ -92,6 +92,10 @@ namespace SportFlex.Migrations
 
                     b.Property<int>("ColorId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePaths")
                         .IsRequired()

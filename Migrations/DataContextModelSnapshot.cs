@@ -90,6 +90,10 @@ namespace SportFlex.Migrations
                     b.Property<int>("ColorId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImagePaths")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

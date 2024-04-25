@@ -76,6 +76,7 @@ namespace SportFlex.Migrations
                     ColorId = table.Column<int>(type: "int", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImagePaths = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

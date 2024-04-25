@@ -80,11 +80,23 @@ namespace SportFlex.Controllers
                 string login = ViewBag.Login;
                 var user = await _context.Users
                     .FirstOrDefaultAsync(u => u.Login == login);
+                var userReviews = await _context.Reviews
+                    .Include(u => u.Product!.Brand)
+                    .Where(u => u.UserId == user!.Id)
+                    .ToListAsync();
 
-                if (user != null)
+                if (user == null)
                 {
-                    return View(user);
+                    return BadRequest();
                 }
+
+                var userData = new UserViewModel
+                {
+                    User = user,
+                    Reviews = userReviews
+                };
+
+                return View(userData);
             }
 
             return RedirectToAction("Index", "Home");
@@ -111,6 +123,12 @@ namespace SportFlex.Controllers
             var isUserExist = await _context.Users.FirstOrDefaultAsync(
                 u => u.Login == user.Login &&
                 u.Password == user.Password);
+
+            if (isUserExist == null)
+            {
+                ModelState.AddModelError("Login", "User with this login is not exist.");
+                return View(user);
+            }
 
             if (isUserExist != null && _httpContextAccessor.HttpContext != null)
             {

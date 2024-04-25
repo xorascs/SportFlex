@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportFlex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b63084b8420c332265b83f4937f4033f2d91ba2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97e842cd50af1243e3143612eb3dc9b293a1c833")]
 [assembly: System.Reflection.AssemblyProductAttribute("SportFlex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportFlex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -77,7 +77,7 @@ namespace SportFlex.Controllers
 
             if (!IsAdminJoined() && review.UserId != GetCurrentUserId())
             {
-                return RedirectToAction("Index", "Cars");
+                return RedirectToAction("Index", "Products");
             }
 
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", review.ProductId);
@@ -153,7 +153,7 @@ namespace SportFlex.Controllers
 
             if (!IsAdminJoined() && review.UserId != GetCurrentUserId())
             {
-                return RedirectToAction("Index", "Cars");
+                return RedirectToAction("Index", "Products");
             }
 
             return View(review);

@@ -4,37 +4,104 @@
     ViewData["Title"] = "Products";
 }
 
-<h1>Products</h1>
+<div class="animate__animated animate__delay-1s animate__fadeIn">
+    <h1 class="text-center mb-4">Products</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    @foreach (var item in Model)
+    @if (ViewBag.Role == "Admin")
     {
-        <div class="col">
-            <div class="card">
-                <img src="@GetImageUrl(item)" class="card-img-top" alt="Product Image">
-                <div class="card-body">
-                    <h5 class="card-title">@item.Name</h5>
-                    <p class="card-text">
-                        <strong>Category:</strong> @item.Category.Name<br />
-                        <strong>Color:</strong> @item.Color.Name<br />
-                        <strong>Brand:</strong> @item.Brand.Name
-                    </p>
-                    <div class="btn-group" role="group" aria-label="Product Actions">
-                        <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-info">Details</a>
-                        @if (ViewBag.Role == "Admin")
-                        {
-                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-primary">Edit</a>
-                            <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger">Delete</a> 
-                        }
-                    </div>
+        <p class="text-center">
+            <a asp-action="Create" class="btn btn-dark">Create Product</a>
+        </p>
+    }
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card animate__animated animate__bounceInUp">
+                <div class="card-body animate__animated animate__delay-1s animate__fadeIn">
+                    <h2 class="card-title">Filters</h2>
+                    <hr />
+                    <form asp-action="Index" method="get">
+                        <div class="form-group">
+                            <label for="searchString">Search by Product Name:</label>
+                            <input type="text" name="searchString" id="searchString" class="form-control" placeholder="Enter product name">
+                        </div>
+                        <div class="form-group">
+                            <label for="brandFilter">Filter by Brand:</label>
+                            <select name="brandFilter" id="brandFilter" class="form-control">
+                                <option value="" selected disabled>Select brand</option>
+                                @foreach (var brand in ViewBag.Brands)
+                                {
+                                    <option value="@brand.Name">@brand.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoryFilter">Filter by Category:</label>
+                            <select name="categoryFilter" id="categoryFilter" class="form-control">
+                                <option value="" selected disabled>Select category</option>
+                                @foreach (var category in ViewBag.Categories)
+                                {
+                                    <option value="@category.Name">@category.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="colorFilter">Filter by Color:</label>
+                            <select name="colorFilter" id="colorFilter" class="form-control">
+                                <option value="" selected disabled>Select color</option>
+                                @foreach (var color in ViewBag.Colors)
+                                {
+                                    <option value="@color.Name">@color.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-block mt-3">Apply Filters</button>
+                        <a asp-action="Index" class="btn btn-dark btn-block mt-3">Reset Filters</a>
+                    </form>
                 </div>
             </div>
         </div>
-    }
+        <div class="col-md-8">
+            <div class="row row-cols-1 row-cols-md-2 g-3 animate__animated animate__bounceInUp">
+                @foreach (var item in Model)
+                {
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="@Url.Action("Details", new { id = item.Id })">
+                                <img 
+                                    src="@GetImageUrl(item)"
+                                    class="card-img-top p-2  animate__animated animate__delay-1s animate__fadeInUp"
+                                    style="width: 100%; max-height: 250px; min-height: 250px; object-fit: cover;"
+                                    alt="Product Image">
+                            </a>
+                            <div class="card-body animate__animated animate__delay-2s animate__fadeIn">
+                                <a 
+                                    href="@Url.Action("Details", new { id = item.Id })" 
+                                    class="text-decoration-none text-black">
+                                    <h5 class="card-title">@item.Brand!.Name @item.Name</h5>
+                                </a>
+                                <hr />
+                                <p class="card-text">
+                                    <strong>Category:</strong> @item.Category!.Name<br />
+                                    <strong>Color:</strong> @item.Color!.Name<br />
+                                </p>
+                            </div>
+                            <div class="card-footer justify-content-center d-flex animate__animated animate__delay-2s animate__fadeIn">
+                                <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-dark me-2">Details</a>
+                                @if (ViewBag.Role == "Admin")
+                                {
+                                    <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-primary me-2">Edit</a>
+                                    <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger me-2">Delete</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
 
 @functions {
