@@ -17,139 +17,139 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SportFlex
 build_property.RootNamespace = SportFlex
-build_property.ProjectDir = C:\Oskars_Projects\SportFlex\
+build_property.ProjectDir = C:\Users\owner\Documents\1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Oskars_Projects\SportFlex
+build_property.MSBuildProjectDirectory = C:\Users\owner\Documents\1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Oskars_Projects/SportFlex/Views/Brands/Create.cshtml]
+[C:/Users/owner/Documents/1/Views/Brands/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Brands/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Brands/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Brands/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Brands/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Brands/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Brands/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Categories/Create.cshtml]
+[C:/Users/owner/Documents/1/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Categories/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Categories/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Categories/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Colors/Create.cshtml]
+[C:/Users/owner/Documents/1/Views/Colors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Colors/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Colors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Colors/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Colors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Colors/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Colors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Home/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Products/Create.cshtml]
+[C:/Users/owner/Documents/1/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Products/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Products/Details.cshtml]
+[C:/Users/owner/Documents/1/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Products/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Products/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Reviews/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Reviews/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Reviews/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Reviews/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Shared/Error.cshtml]
+[C:/Users/owner/Documents/1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/owner/Documents/1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Create.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Delete.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Edit.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Index.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Login.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/MyPage.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/MyPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTXlQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Users/Register.cshtml]
+[C:/Users/owner/Documents/1/Views/Users/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/_ViewImports.cshtml]
+[C:/Users/owner/Documents/1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/_ViewStart.cshtml]
+[C:/Users/owner/Documents/1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Oskars_Projects/SportFlex/Views/Shared/_Layout.cshtml]
+[C:/Users/owner/Documents/1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-el34xr8axa

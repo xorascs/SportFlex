@@ -12,8 +12,8 @@ using SportFlex.Data;
 namespace SportFlex.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240425092346_Default")]
-    partial class Default
+    [Migration("20240430121452_SportFlex")]
+    partial class SportFlex
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

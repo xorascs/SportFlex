@@ -71,7 +71,7 @@ void CreateDbIfNotExists(WebApplication app)
 
         // Database exists, migrate if necessary
         context.Database.Migrate();
-        DbInitializer.Initialize(context);
+        Database.Create(context);
     }
     catch (Exception ex)
     {

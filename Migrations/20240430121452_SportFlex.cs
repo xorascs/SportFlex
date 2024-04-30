@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SportFlex.Migrations
 {
     /// <inheritdoc />
-    public partial class Default : Migration
+    public partial class SportFlex : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
