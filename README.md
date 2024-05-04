@@ -11,3 +11,4 @@ To start project just press 'F5' in Visual Studio project
 3. Default website administrator:
    -login: andrejs
    -password: 123
+You can change it in /Data/Database.cs
